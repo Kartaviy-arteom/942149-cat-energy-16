@@ -1,0 +1,24 @@
+.nutrition-program {
+  background-color: @programs-color;
+}
+
+.nutrition-program__title {
+  .h2;
+  position: relative;
+  padding-top: 35px;
+  padding-left: 73px;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 55px;
+    width: 50px;
+    top: 0;
+    left: 10px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
