@@ -17,3 +17,21 @@
   line-height: 18px;
   color: @paragraph-color;
 }
+
+.how-it-work__item::before {
+  content: "";
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  top: 0;
+  left: 0;
+  background-color: #67b737;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.how-it-work__item--composition::before {
+  background-image: url("../img/advantage-leaf@1.png");
+}
+
+
