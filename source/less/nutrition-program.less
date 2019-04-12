@@ -10,7 +10,7 @@
   padding-top: 35px;
   padding-left: 93px;
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
     height: 55px;
@@ -21,9 +21,20 @@
     background-repeat: no-repeat;
     background-position: 0 0;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 24px;
+    left: 28px;
+    background-color: #67b737;
+    border-radius: 50%;
+  }
 }
 
-.nutrition-program__title--weight-gain::before {
+.nutrition-program__title--weight-gain::after {
   height: 35px;
   width: 70px;
   top: 35px;
@@ -41,10 +52,23 @@
 }
 
 .nutrition-program__catalog {
+  position: relative;
   display: block;
   .h2(16px,16px);
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
   color: #111111;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 10px;
+    top: 25px;
+    left: 120px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }

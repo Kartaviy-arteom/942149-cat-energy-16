@@ -19,6 +19,7 @@
 }
 
 .example__wrapper--decor {
+  margin-bottom: 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -32,6 +33,7 @@
 }
 
 .example__top-element {
+  position: relative;
   width: 125px;
   box-sizing: border-box;
   .h2(24px, 24px);
@@ -41,6 +43,26 @@
   border-left: 1px solid @border-color;
   border-right: 1px solid @border-color;
   text-align: center;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 53px;
+      left: 0;
+      width: 18px;
+      height: 1px;
+      background-color: @border-color;
+    }
+
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 53px;
+      right: 0;
+      width: 18px;
+      height: 1px;
+      background-color: @border-color;
+    }
 }
 
 .example__bottom-element {
