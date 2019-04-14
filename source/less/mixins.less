@@ -1,6 +1,16 @@
 .h2(@font-size;@line-height) {
   margin: 0;
   text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: @font-size;
+  line-height: @line-height;
+  font-weight: 400;
+}
+
+.title (@font-size;@line-height) {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: @font-size;
   line-height: @line-height;
   font-weight: 400;
@@ -13,4 +23,16 @@
 .text-size(@font-size;@line-height) {
   font-size: @font-size;
   line-height: @line-height;
+}
+
+.fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
