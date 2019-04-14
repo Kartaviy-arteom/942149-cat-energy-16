@@ -1,0 +1,78 @@
+.example {
+  background-color: @programs-color;
+}
+
+.example__title {
+  .h2(36px, 60px);
+  padding-top: 30px;
+  margin-bottom: 35px;
+  text-transform: none;
+}
+
+.example__paragraph {
+  padding: 0;
+  padding-bottom: 25px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.example__wrapper {
+  &--decor {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.example__result {
+  width: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.example__top-element {
+  position: relative;
+  width: 125px;
+  box-sizing: border-box;
+  .h2(24px, 24px);
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-top: 1px solid @border-color;
+  border-left: 1px solid @border-color;
+  border-right: 1px solid @border-color;
+  text-align: center;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    top: 53px;
+    left: 0;
+    width: 18px;
+    height: 1px;
+    background-color: @border-color;
+  }
+
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 53px;
+    right: 0;
+    width: 18px;
+    height: 1px;
+    background-color: @border-color;
+  }
+}
+
+.example__bottom-element {
+  width: 60px;
+  align-self: center;
+  text-align: center;
+  margin-top: -10px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+}

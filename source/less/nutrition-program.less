@@ -1,0 +1,74 @@
+.nutrition-program {
+  margin-bottom: 20px;
+  background-color: @programs-color;
+}
+
+.nutrition-program__title {
+  .h2(24px; 37px);
+  margin-bottom: 35px;
+  position: relative;
+  padding-top: 35px;
+  padding-left: 93px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 55px;
+    width: 50px;
+    top: 24px;
+    left: 28px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 24px;
+    left: 28px;
+    background-color: #67b737;
+    border-radius: 50%;
+  }
+
+  &--weight-gain::after {
+    height: 35px;
+    width: 70px;
+    top: 35px;
+    left: 10px;
+    background-image: url("../img/icon-cat-pro.svg");
+  }
+}
+
+.nutrition-program__paragraph {
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid @border-color;
+  color: @paragraph-color;
+}
+
+.nutrition-program__catalog {
+  position: relative;
+  display: block;
+  .h2(16px,16px);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  color: #111111;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 10px;
+    top: 25px;
+    left: 120px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}

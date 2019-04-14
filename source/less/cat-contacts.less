@@ -1,0 +1,41 @@
+.cat-contacts {
+  .fieldset;
+  .border-bottom();
+}
+
+.cat-contacts__legend {
+  padding: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  .text-size(24px; 24px);
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+.cat-contacts__list {
+  .list;
+}
+
+.cat-contacts__item {
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cat-contacts__label {
+  .h2 (16px; 18px);
+}
+
+.cat-contacts__input {
+  border: 1px solid @input-color;
+  box-sizing: border-box;
+  .h2 (16px; 18px);
+
+  &--mail {
+    width: 219px;
+  }
+
+  &--phone {
+    width: 204px;
+  }
+}

@@ -1,0 +1,64 @@
+.fat-cat__result {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  color: #111111;
+}
+
+.fat-cat__image {
+  margin-bottom: 30px;
+
+  &--skinny {
+    display: none;
+  }
+}
+
+.fat-cat__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.fat-cat__btn {
+  .h2 (16px, 20px);
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &--been {
+    padding-left: 40px;
+  }
+
+  &--become {
+    padding-right: 40px;
+  }
+}
+
+.fat-cat__mark {
+  position: relative;
+  width: 84px;
+  height: 14px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid @border-color;
+  border-radius: 4px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    top: 3px;
+    left: 5px;
+    background-color: #68b738;
+    border-radius: 2px;
+  }
+}
