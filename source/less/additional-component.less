@@ -1,5 +1,16 @@
 .additional-component {
+  position: relative;
   .fieldset;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: -20px;
+    width: 136px;
+    height: 3px;
+    background-color: #68b738;
+  }
 }
 
 .additional-component__legend {
