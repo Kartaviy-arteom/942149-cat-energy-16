@@ -62,6 +62,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    .border-bottom();
   }
 
   .how-it-work__item {
@@ -95,8 +96,18 @@
     &--composition::after {
       content: "1";
     }
+
+    &--form::after {
+      content: "2";
+    }
+
+    &--application::after {
+      content: "3";
+    }
+
+    &--time::after {
+      content: "4";
+    }
   }
-
-
 }
 
