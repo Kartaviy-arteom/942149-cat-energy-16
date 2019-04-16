@@ -72,3 +72,46 @@
     background-position: 0 0;
   }
 }
+
+@media (min-width: 768px) {
+  .nutrition-program__title {
+    .h2(36px; 37px);
+    margin-bottom: 25px;
+    position: relative;
+    padding-top: 75px;
+    padding-left: 55px;
+
+    &::after {
+      height: 200px;
+      width: 140px;
+      top: 24px;
+      left: 475px;
+    }
+
+    &::before {
+    height: 200px;
+    width: 200px;
+    top: 40px;
+    left: 440px;
+    }
+
+    &--weight-gain::after {
+    height: 113px;
+    width: 270px;
+    top: 74px;
+    left: 375px;
+    }
+  }
+
+  .nutrition-program__paragraph {
+    padding-right: 380px;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .nutrition-program__catalog {
+    padding-bottom: 55px;
+  }
+}
+
