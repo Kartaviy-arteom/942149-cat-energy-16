@@ -2,7 +2,7 @@
   margin-bottom: 25px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -22,3 +22,35 @@
   .text-size(12px; 16px);
   color: #444444;
 }
+
+@media (min-width: 768px) {
+  .item-card {
+    background-image: linear-gradient(#ffffff 80px, #f2f2f2 80px);/*временно*/
+  }
+
+  .item-card__wrapper {
+    width: 324px;
+    text-align: center;
+  }
+
+  .item-card__title {
+    width: 324px;
+    font-size: 20px;
+  }
+
+  .item-card__list {
+    width: 250px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .item-card__wrapper {
+    width: 245px;
+  }
+
+  .item-card__title {
+    width: 100%;
+  }
+}
+
