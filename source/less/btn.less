@@ -12,9 +12,25 @@
   line-height: 18px;
   text-align: center;
 
+  &:hover, &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &--show {
     background-color: #f2f2f2;
     color: #444444;
+
+    &:hover, &:focus {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
 
   &--send-form {

@@ -18,6 +18,16 @@
   a {
     color: #111111;
   }
+
+  a[href] {
+    &:hover, &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: 768px) {
