@@ -33,3 +33,31 @@
   width: 280px;
   resize: none;
 }
+
+@media (min-width: 768px) {
+  .comment {
+    &::after {
+      right: -30px;
+      width: 480px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 38px;
+      left: -30px;
+      width: 30px;
+      height: 3px;
+      background-color: #68b738;
+    }
+  }
+
+  .comment__legend {
+    padding-left: 38px;
+  }
+
+  .comment__user-question {
+    width: 630px;
+    margin-left: 40px;
+  }
+}
