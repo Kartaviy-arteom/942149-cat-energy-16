@@ -7,36 +7,36 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header container">
-      <a class="header__logo" href="#">
-        <img class="header__logo-image" src="img/logo-mobile.svg" alt="Логотип Cat Energy" width="190" height="40">
-      </a>
-      <h1 class="visually-hidden">Cat energy интернет-магазин</h1>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <svg version="1.1" width="18" height="18" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
-            <polygon points="18,1.3 16.7,0 9,7.7 1.3,0 0,1.3 7.7,9 0,16.7 1.3,18 9,10.3 16.7,18 18,16.7 10.3,9 "/>
-          </svg>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active"><a>Главное</a></li>
-            <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-            <li class="site-list__item"><a href="programs.html">Подбор программы</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main class="page-main">
-      <section class="functional-food">
+    <header class="header">
+      <div class="header__wrapper container">
+        <a class="header__logo" href="#">
+          <img class="header__logo-image" src="img/logo-mobile.svg" alt="Логотип Cat Energy" width="190" height="40">
+        </a>
+        <h1 class="visually-hidden">Cat energy интернет-магазин</h1>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <svg version="1.1" width="18" height="18" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+              <polygon points="18,1.3 16.7,0 9,7.7 1.3,0 0,1.3 7.7,9 0,16.7 1.3,18 9,10.3 16.7,18 18,16.7 10.3,9 "/>
+            </svg>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active"><a>Главное</a></li>
+              <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
+              <li class="site-list__item"><a href="programs.html">Подбор программы</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <section class="header__functional-food functional-food">
         <div class="functional-food__wrapper container">
           <h2 class="functional-food__title">Функциональное питание для котов</h2>
           <p class="functional-food__paragraph">Занялся собой? Займися котом!</p>
-        </div>
-        <div class="functional-food__btn-wrapper container">
           <a class="functional-food__btn btn btn--choose-program" href="programs.html">Подобрать программу</a>
         </div>
       </section>
+    </header>
+    <main class="page-main">
       <div class="container">
         <section class="programs">
           <h2 class="visually-hidden">Программы питания для котов</h2>
@@ -93,7 +93,7 @@
           <p class="contacts__welcome">Приглашаем к сотрудничесиву дилеров!</p>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <div class="contacts__wrapper--map">
+        <div class="contacts__wrapper contacts__wrapper--map">
           <img class="contacts__map" src="img/bg-map-mobile@1x.png" alt="Схема проезда" width="320" height="400">
           <img class="contacts__pin" src="img/map-pin.png" alt="Схема проезда" width="124" height="106">
         </div>
