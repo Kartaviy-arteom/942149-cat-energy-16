@@ -46,13 +46,13 @@
 .cat-contacts__title {
   position: relative;
 
-  &:after {
+  &::after {
     position: absolute;
     z-index: 1;
     width: 100%;
     height: 2px;
     background-color: #67b737;
-    content: '';
+    content: "";
     left: 0;
     top: 50%;
   }
@@ -64,12 +64,12 @@
     padding-right: 20px;
   }
 
-  & span:before {
+  & span::before {
     width: 20px;
     height: 100%;
     left: -20px;
     top: 0;
-    content: '';
+    content: "";
     background-color: #ffffff;
     position: absolute;
   }
