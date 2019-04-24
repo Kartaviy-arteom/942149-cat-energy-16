@@ -25,15 +25,16 @@
           </div>
         </nav>
       </div>
-      </nav>
     </header>
     <main class="page-main">
-      <div class="page-main__wrapper container">
-        <section class="program-select">
+      <section class="program-select">
+        <div class="program-select__wrapper container">
           <h1 class="program-select__title">Подбор программы</h1>
           <p class="program-select__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
           <h2 class="visually-hidden">анкета кота</h2>
-          <form class="program-select__filters filters" method="get" action="https://echo.htmlacademy.ru">
+        </div>
+        <form class="program-select__filters filters" method="get" action="https://echo.htmlacademy.ru">
+          <div class="program-select__wrapper container">
             <fieldset class="filters__form-name form-name">
               <ul class="form-name__list">
                 <li class="form-name__item">
@@ -66,8 +67,12 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filters__contacts cat-contacts">
-              <legend class="cat-contacts__legend">Контактные данные кота (владельца кота)</legend>
+          </div>
+          <fieldset class="filters__contacts cat-contacts">
+            <div class="cat-contacts__title">
+              <h3 class="cat-contacts__legend container"><span>Контактные данные кота (владельца кота)</span></h3>
+            </div>
+            <div class="cat-contacts__wrapper container">
               <ul class="cat-contacts__list">
                 <li class="cat-contacts__item">
                   <label class="cat-contacts__label" for="mail">e-mail:<sup>*</sup></label>
@@ -78,39 +83,39 @@
                   <input class="cat-contacts__input cat-contacts__input--phone input-form" type="tel" name="owner-phone" id="owner-phone" placeholder="8(960) 900-60-90" required>
                 </li>
               </ul>
-            </fieldset>
-            <fieldset class="filters__comment comment">
-              <legend class="comment__legend">Комментарии</legend>
-              <textarea class="comment__user-question" id="comments" rows="6" placeholder="Расскажите обо всех повадках кота"></textarea>
-            </fieldset>
-            <fieldset class="filters__additional additional-component">
-              <legend class="additional-component__legend">Дополнительно</legend>
-              <ul class="additional-component__list">
-                <li class="additional-component__item">
-                  <input class="additional-component-input" type="checkbox" name="sugar" id="sugar" checked>
-                  <label for="sugar">Сахарозаменитель</label>
-                </li>
-                <li class="additional-component__item">
-                  <input class="additional-component-input" type="checkbox" name="water" id="water">
-                  <label for="water">Питьевая вода</label>
-                </li>
-                <li class="additional-component__item">
-                  <input class="additional-component-input" type="checkbox" name="milk" id="milk">
-                  <label for="milk">Молоко</label>
-                </li>
-                <li class="additional-component__item">
-                  <input class="additional-component-input" type="checkbox" name="vitamins" id="vitamins">
-                  <label for="vitamins">Витамины</label>
-                </li>
-              </ul>
-            </fieldset>
-            <div class="filters__wrapper send-form">
-              <button class="send-form__btn btn btn--send-form" type="submit">отправить заявку</button>
-              <span class="send-form__notice"><sup>*</sup>- Обязательные поля</span>
             </div>
-          </form>
-        </section>
-      </div>
+          </fieldset>
+          <fieldset class="filters__comment comment">
+            <legend class="comment__legend">Комментарии</legend>
+            <textarea class="comment__user-question" id="comments" rows="6" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="filters__additional additional-component">
+            <legend class="additional-component__legend">Дополнительно</legend>
+            <ul class="additional-component__list">
+              <li class="additional-component__item">
+                <input class="additional-component-input" type="checkbox" name="sugar" id="sugar" checked>
+                <label for="sugar">Сахарозаменитель</label>
+              </li>
+              <li class="additional-component__item">
+                <input class="additional-component-input" type="checkbox" name="water" id="water">
+                <label for="water">Питьевая вода</label>
+              </li>
+              <li class="additional-component__item">
+                <input class="additional-component-input" type="checkbox" name="milk" id="milk">
+                <label for="milk">Молоко</label>
+              </li>
+              <li class="additional-component__item">
+                <input class="additional-component-input" type="checkbox" name="vitamins" id="vitamins">
+                <label for="vitamins">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="filters__wrapper send-form">
+            <button class="send-form__btn btn btn--send-form" type="submit">отправить заявку</button>
+            <span class="send-form__notice"><sup>*</sup>- Обязательные поля</span>
+          </div>
+        </form>
+      </section>
       <section class="contacts">
         <h2 class="visually-hidden">Контакты магазина</h2>
         <div class="contacts__wrapper container">

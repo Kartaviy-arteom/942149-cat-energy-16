@@ -29,7 +29,7 @@
   }
 }
 
-.fat-cat__mark {
+.fat-cat__slider {
   position: relative;
   width: 84px;
   height: 14px;
@@ -37,17 +37,17 @@
   background-color: #ffffff;
   border: 1px solid @border-color;
   border-radius: 4px;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 35px;
-    height: 6px;
-    top: 3px;
-    left: 5px;
-    background-color: #68b738;
-    border-radius: 2px;
-  }
+.fat-cat__mark {
+  display: block;
+  position: absolute;
+  width: 35px;
+  height: 6px;
+  top: 3px;
+  left: 5px;
+  background-color: #68b738;
+  border-radius: 2px;
 }
 
 @media (min-width: 768px) {
