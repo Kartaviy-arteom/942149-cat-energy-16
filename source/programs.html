@@ -34,38 +34,42 @@
           <h2 class="visually-hidden">анкета кота</h2>
         </div>
         <form class="program-select__filters filters" method="get" action="https://echo.htmlacademy.ru">
-          <div class="program-select__wrapper container">
+          <div class="program-select__wrapper program-select__wrapper--container">
             <fieldset class="filters__form-name form-name">
-              <ul class="form-name__list">
-                <li class="form-name__item">
-                  <label class="form-name__label" for="cat-name">Имя:<sup>*</sup></label>
-                  <input class="form-name__input form-name__input--cat-name  input-form" type="text" name="cat-name" id="cat-name" required>
-                </li>
-                <li class="form-name__item">
-                  <label class="form-name__label" for="cat-weight">Вес (кг):<sup>*</sup></label>
-                  <input class="form-name__input form-name__input--cat-weight input-form" type="text" name="cat-weight" id="cat-weight" required>
-                </li>
-                <li class="form-name__item">
-                  <label class="form-name__label" for="cat-age">Возраст (лет):</label>
-                  <input class="form-name__input form-name__input--cat-age input-form" type="text" name="cat-age" id="cat-age">
-                </li>
-              </ul>
+              <div class="form-name__wrapper container">
+                <ul class="form-name__list">
+                  <li class="form-name__item">
+                    <label class="form-name__label" for="cat-name">Имя:<sup>*</sup></label>
+                    <input class="form-name__input form-name__input--cat-name  input-form" type="text" name="cat-name" id="cat-name" required>
+                  </li>
+                  <li class="form-name__item">
+                    <label class="form-name__label" for="cat-weight">Вес (кг):<sup>*</sup></label>
+                    <input class="form-name__input form-name__input--cat-weight input-form" type="text" name="cat-weight" id="cat-weight" required>
+                  </li>
+                  <li class="form-name__item">
+                    <label class="form-name__label" for="cat-age">Возраст (лет):</label>
+                    <input class="form-name__input form-name__input--cat-age input-form" type="text" name="cat-age" id="cat-age">
+                  </li>
+                </ul>
+              </div>
             </fieldset>
             <fieldset class="filters__form-program form-program">
-              <ul class="form-program__list">
-                <li class="form-program__item">
-                  <input class="form-program__input radio-form" type="radio" name="programe-type" value="slim" id="slim-program" checked>
-                  <label class="form-program__label" for="slim-program">Похудение</label>
-                </li>
-                <li class="form-program__item">
-                  <input class="form-program__input radio-form" type="radio" name="programe-type" value="pro" id="pro-program">
-                  <label class="form-program__label" for="pro-program">Набор массы</label>
-                </li>
-                <li class="form-program__item">
-                  <input class="form-program__input radio-form" type="radio" name="programe-type" value="advice" id="get-advice">
-                  <label class="form-program__label" for="get-advice">не знаю (нужен ваш совет)</label>
-                </li>
-              </ul>
+              <div class="form-program__wrapper container">
+                <ul class="form-program__list">
+                  <li class="form-program__item">
+                    <input class="form-program__input radio-form" type="radio" name="programe-type" value="slim" id="slim-program" checked>
+                    <label class="form-program__label" for="slim-program">Похудение</label>
+                  </li>
+                  <li class="form-program__item">
+                    <input class="form-program__input radio-form" type="radio" name="programe-type" value="pro" id="pro-program">
+                    <label class="form-program__label" for="pro-program">Набор массы</label>
+                  </li>
+                  <li class="form-program__item">
+                    <input class="form-program__input radio-form" type="radio" name="programe-type" value="advice" id="get-advice">
+                    <label class="form-program__label" for="get-advice">не знаю (нужен ваш совет)</label>
+                  </li>
+                </ul>
+              </div>
             </fieldset>
           </div>
           <fieldset class="filters__contacts cat-contacts">
