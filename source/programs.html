@@ -86,31 +86,39 @@
             </div>
           </fieldset>
           <fieldset class="filters__comment comment">
-            <legend class="comment__legend">Комментарии</legend>
-            <textarea class="comment__user-question" id="comments" rows="6" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <div class="comment__title">
+              <h3 class="comment__legend container"><span>Комментарии</span></h3>
+            </div>
+            <div class="comment__wrapper container">
+              <textarea class="comment__user-question" id="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
           </fieldset>
           <fieldset class="filters__additional additional-component">
-            <legend class="additional-component__legend">Дополнительно</legend>
-            <ul class="additional-component__list">
-              <li class="additional-component__item">
-                <input class="additional-component-input" type="checkbox" name="sugar" id="sugar" checked>
-                <label for="sugar">Сахарозаменитель</label>
-              </li>
-              <li class="additional-component__item">
-                <input class="additional-component-input" type="checkbox" name="water" id="water">
-                <label for="water">Питьевая вода</label>
-              </li>
-              <li class="additional-component__item">
-                <input class="additional-component-input" type="checkbox" name="milk" id="milk">
-                <label for="milk">Молоко</label>
-              </li>
-              <li class="additional-component__item">
-                <input class="additional-component-input" type="checkbox" name="vitamins" id="vitamins">
-                <label for="vitamins">Витамины</label>
-              </li>
-            </ul>
+            <div class="additional-component__title">
+              <h3 class="additional-component__legend container"><span>Дополнительно</span></h3>
+            </div>
+            <div class="additional-component__wrapper container">
+              <ul class="additional-component__list">
+                <li class="additional-component__item">
+                  <input class="additional-component-input" type="checkbox" name="sugar" id="sugar" checked>
+                  <label for="sugar">Сахарозаменитель</label>
+                </li>
+                <li class="additional-component__item">
+                  <input class="additional-component-input" type="checkbox" name="water" id="water">
+                  <label for="water">Питьевая вода</label>
+                </li>
+                <li class="additional-component__item">
+                  <input class="additional-component-input" type="checkbox" name="milk" id="milk">
+                  <label for="milk">Молоко</label>
+                </li>
+                <li class="additional-component__item">
+                  <input class="additional-component-input" type="checkbox" name="vitamins" id="vitamins">
+                  <label for="vitamins">Витамины</label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
-          <div class="filters__wrapper send-form">
+          <div class="filters__wrapper send-form container">
             <button class="send-form__btn btn btn--send-form" type="submit">отправить заявку</button>
             <span class="send-form__notice"><sup>*</sup>- Обязательные поля</span>
           </div>
