@@ -59,4 +59,49 @@
   .form-name {
     border-bottom: none;
   }
+
+  .form-name__label {
+    padding-top: 15px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .form-name__input {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
+
+@media (min-width: 1300px) {
+  .form-name__wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .form-name__input {
+    font-size: 20px;
+    line-height: 20px;
+
+    &--cat-name {
+      width: 505px;
+    }
+
+    &--cat-weight {
+      width: 475px;
+    }
+
+    &--cat-age {
+      width: 435px;
+    }
+  }
+
+  .form-name__label {
+    padding-top: 15px;
+  }
+
+  .form-name__item--cat-age {
+    padding-bottom: 0;
+  }
+}
+

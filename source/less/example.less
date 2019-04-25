@@ -96,7 +96,7 @@
 
 @media (min-width: 768px) {
   .example {
-    background-color: #ffffff;
+    background-image: linear-gradient(to bottom, #ffffff 620px, #f2f2f2 620px);
   }
 
   .example__title {
@@ -122,11 +122,15 @@
   .example__result--time {
     margin-left: 40px;
   }
+
+  .example__wrapper--decorative  {
+    margin-bottom: 80px;
+  }
 }
 
 @media (min-width: 1300px) {
   .example {
-    background-color: #f2f2f2;
+    background-image: linear-gradient(to bottom, #ffffff 150px, #f2f2f2 150px);
   }
 
   .example__wrapper {
@@ -137,15 +141,29 @@
   }
 
   .example__paragraph {
-    width: 570px;
+    width: 100%;
+    padding-right: 780px;
   }
 
   .example__wrapper--decorative {
     width: 570px;
+    margin-bottom: 0;
+  }
+
+  .example__cost {
+    width: 100%;
+  }
+
+  .example__result--time {
+    margin-right: auto;
   }
 
   .example__cat {
     width: 610px;
     margin: 0;
+  }
+
+  .example__cost {
+    text-align: left;
   }
 }

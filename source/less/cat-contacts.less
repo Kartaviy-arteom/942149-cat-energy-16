@@ -7,7 +7,7 @@
   padding: 0;
   padding-top: 25px;
   padding-bottom: 25px;
-  padding-right: 95px;
+  padding-right: 30px;
   box-sizing: border-box;
   .text-size(24px; 28px);
   font-family: "Oswald", "Arial", sans-serif;
@@ -77,10 +77,15 @@
 
 @media (min-width: 768px) {
   .cat-contacts__legend {
+    font-size: 36px;
+    line-height: 36px;
     padding-left: 40px;
+    box-sizing: content-box;
   }
 
   .cat-contacts__input {
+    font-size: 20px;
+    line-height: 20px;
     margin-right: 35px;
 
     &--mail {
@@ -98,6 +103,8 @@
 
   .cat-contacts__label {
     padding-top: 10px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -135,5 +142,13 @@
 
   .cat-contacts__input {
     width: 485px;
+    font-size: 20px;
+    font-weight: 20px;
+    margin-right: 0;
+  }
+
+  .cat-contacts__legend {
+    padding-right: 40px;
+    box-sizing: content-box;
   }
 }

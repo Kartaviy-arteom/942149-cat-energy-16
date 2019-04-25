@@ -57,23 +57,46 @@
     padding-bottom: 4px;
   }
 
-  .fat-cat__mark {
+   .fat-cat__slider {
+    align-self: center;
     width: 430px;
     height: 6px;
     background-color: #dcdcdc;
     border-radius: 3px;
+  }
 
-    &::after {
-      width: 35px;
-      height: 35px;
-      top: 50%;
-      left: 50%;
-      margin-top: -17px;
-      background-color: #67b737;
-      box-sizing: border-box;
-      border: 12px solid #ffffff;
-      border-radius: 50%;
-      box-shadow: 0 0 0 1px #cdcdcd;
-    }
+  .fat-cat__mark {
+    width: 35px;
+    height: 35px;
+    top: 50%;
+    left: 50%;
+    margin-top: -17px;
+    background-color: #67b737;
+    box-sizing: border-box;
+    border: 12px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #cdcdcd;
+  }
+
+  .fat-cat__image  {
+    display: block;
+    transform: translateX(50%);
+  }
+
+  .fat-cat__image--skinny {
+    display: none;
+  }
+}
+
+@media (min-width: 1300px) {
+  .fat-cat {
+    position: relative;
+    align-self: flex-end;
+  }
+
+  .fat-cat__image {
+    position: absolute;
+    left: 0;
+    top: -350px;
   }
 }
