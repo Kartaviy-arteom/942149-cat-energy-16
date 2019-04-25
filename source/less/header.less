@@ -7,3 +7,46 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+@media (min-width: 768px) {
+  .header {
+    border: none;
+  }
+
+  .header__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    width: 192px;
+  }
+
+  .header__logo-image {
+    width: 175px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .header {
+    background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, #ffffff 50%, #65a93c 50%);
+    background-repeat: no-repeat;
+    background-position: 50vw 0, 0 0;
+    margin-bottom: 80px;
+  }
+
+  .header__logo {
+    width: 205px;
+    margin-right: auto;
+  }
+
+  .header__functional-food {
+    margin-bottom: 80px;
+  }
+
+  .header--inner {
+    background: none;
+  }
+}

@@ -1,12 +1,7 @@
 .functional-food {
   margin-bottom: 22px;
-}
-
-.functional-food__wrapper {
-  background-image: url("../img/index-can-mobile@1x.png"),
-    url("../img/index-background-mobile@1x.jpg"),
-    linear-gradient(#65a93c 305px, transparent 305px);
-  background-position: 20px 200px, 0 0, 0 0;
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg"), linear-gradient(#65a93c 305px, transparent 305px);
+  background-position: 50% 165px, 50% 0, 0 0;
   background-repeat: no-repeat;
 }
 
@@ -33,4 +28,52 @@
 
 .functional-food__btn {
   padding-top: 130px;
+}
+
+@media (min-width: 768px) {
+  .functional-food {
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-position: 0 100%;
+    padding-bottom: 530px;
+  }
+
+  .functional-food__title {
+    padding-left: 0;
+    font-size: 60px;
+    line-height: 60px;
+    color: #111111;
+    padding-right: 190px;
+  }
+
+  .functional-food__paragraph {
+    padding-left: 0;
+    padding-bottom: 40px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #111111;
+  }
+
+  .functional-food__btn {
+    width: 245px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .functional-food__title {
+    padding-right: 720px;
+    padding-bottom: 45px;
+  }
+
+  .functional-food {
+    margin-bottom: 0;
+    padding-bottom: 185px;
+    background-image: url("../img/index-can-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: 60% 0;
+  }
+
+  .functional-food__btn-wrapper {
+    background: none;
+    padding-bottom: 190px;
+  }
 }

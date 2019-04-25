@@ -18,4 +18,47 @@
   a {
     color: #111111;
   }
+
+  a[href] {
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .site-list__item {
+    border: none;
+
+    &--active {
+      border-bottom: 2px solid #68b738;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .site-list__item {
+    line-height: 25px;
+
+    & a {
+      color: #ffffff;
+    }
+
+    &--active {
+      border-bottom: 2px solid #ffffff;
+    }
+
+    &--inner a {
+      color: #111111;
+    }
+
+    &--inner--active {
+      border-bottom: 2px solid #67b737;
+    }
+  }
 }
