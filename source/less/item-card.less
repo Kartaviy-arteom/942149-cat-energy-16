@@ -1,7 +1,7 @@
 .item-card {
   margin-bottom: 25px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -42,6 +42,10 @@
     width: 250px;
     font-size: 16px;
   }
+
+  .item-card__image {
+    align-self: center;
+  }
 }
 
 @media (min-width: 1300px) {
@@ -51,5 +55,18 @@
 
   .item-card__title {
     width: 100%;
+  }
+
+  .item-card__list {
+    width: 170px;
+    margin: 0 auto;
+  }
+
+  .item-card__list td:nth-child(2n+1) {
+    text-align: left;
+  }
+
+  .item-card__list td:nth-child(2n) {
+    text-align: right;
   }
 }
