@@ -23,7 +23,7 @@
   color: #444444;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .more-cards {
     padding-top: 80px;
     padding-bottom: 0;
@@ -56,5 +56,19 @@
   .more-cards__text {
     font-size: 16px;
     line-height: 16px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .more-cards__title {
+    display: block;
+    padding-right: 45px;
+    padding-left: 45px;
+    font-size: 20px;
+  }
+
+  .more-cards__text {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

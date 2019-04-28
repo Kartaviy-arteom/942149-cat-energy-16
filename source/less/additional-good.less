@@ -25,6 +25,7 @@
     font-size: 20px;
     line-height: 20px;
     width: 285px;
+    padding-left: 38px;
   }
 
   .additional-good {
@@ -32,10 +33,26 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-left: 1px solid #f2f2f2;
+    border-right: 1px solid #f2f2f2;
+  }
+
+  .additional-good {
+    border-top: 1px solid #f2f2f2;
+  }
+
+  .additional-good ~ .additional-good {
+    border-top: none;
   }
 
   .additional-good__wrapper {
     width: 285px;
+    text-align: right;
+    padding-right: 38px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .additional-good__btn {
