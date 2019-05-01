@@ -35,6 +35,11 @@
     background-repeat: no-repeat;
     background-position: 50vw 0, 0 0;
     margin-bottom: 80px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg"), linear-gradient(to right, #ffffff 50%, #65a93c 50%);
+      background-size: 720px auto, auto;
+    }
   }
 
   .header__logo {
@@ -48,5 +53,9 @@
 
   .header--inner {
     background: none;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: none;
+    }
   }
 }

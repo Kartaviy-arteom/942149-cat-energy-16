@@ -5,6 +5,9 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
 .promo-box__gift {
@@ -30,6 +33,10 @@
     justify-content: space-between;
     align-items: center;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   .promo-box__gift {

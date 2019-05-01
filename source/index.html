@@ -74,8 +74,12 @@
             <p class="example__cost">Затраты на питание: 15 000 руб.</p>
           </div>
           <div class="example__cat fat-cat">
-            <img class="fat-cat__image fat-cat__image--fat" src="img/before-mobile@1x.png" alt="Был толстый кот" width="320" height="240">
-            <img class="fat-cat__image fat-cat__image--skinny" src="img/after-mobile@1x.png" alt="Стал тощий кот" width="320" height="240">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+              <img class="fat-cat__image fat-cat__image--fat" src="img/before-mobile@1x.png" alt="Был толстый кот" width="320" height="240" srcset="img/before-mobile@2x.png 2x">
+              <img class="fat-cat__image fat-cat__image--skinny" src="img/after-mobile@1x.png" alt="Стал тощий кот" width="320" height="240">
+            </picture>
             <div class="fat-cat__wrapper">
               <button class="fat-cat__btn fat-cat__btn--been" type="button">Было</button>
               <div class="fat-cat__slider">
