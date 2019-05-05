@@ -96,6 +96,10 @@
 }
 
 @media (min-width: 768px) {
+  .example__result {
+    width: 162px;
+  }
+
   .example {
     border-top: 1px solid @border-color;
     background-image: linear-gradient(to bottom, #ffffff 620px, #f2f2f2 620px);
@@ -110,7 +114,7 @@
   .example__paragraph {
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 55px;
+    padding-bottom: 53px;
   }
 
   .example__cat {
@@ -119,6 +123,17 @@
 
   .example__cost {
     margin-left: auto;
+    padding-top: 10px;
+    font-size: 20px;
+    line-height: 20px;
+    width: 190px;
+    text-align: right;
+  }
+
+  .example__cost span {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 10px;
   }
 
   .example__result--time {
@@ -126,13 +141,43 @@
   }
 
   .example__wrapper--decorative {
-    margin-bottom: 80px;
+    margin-bottom: 63px;
+  }
+
+  .example__top-element {
+    width: 162px;
+    font-size: 30px;
+    line-height: 37px;
+
+    &:before, &::after {
+      top: 67px;
+      width: 23px;
+    }
+  }
+
+  .example__bottom-element {
+    width: 100px;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: -9px;
+  }
+
+  .example__result--time .example__bottom-element {
+    width: 128px;
+  }
+
+  .example__result--time .example__top-element {
+    &:before, &::after {
+      width: 10px;
+    }
   }
 }
 
 @media (min-width: 1300px) {
   .example {
-    background-image: linear-gradient(to bottom, #ffffff 150px, #f2f2f2 150px);
+    position: relative;
+    border-top: none;
+    background-image: linear-gradient(to bottom, #ffffff 180px, #f2f2f2 180px);
   }
 
   .example__wrapper {
@@ -145,6 +190,7 @@
   .example__paragraph {
     width: 100%;
     padding-right: 780px;
+    padding-bottom: 71px;
   }
 
   .example__wrapper--decorative {
@@ -153,8 +199,15 @@
   }
 
   .example__cost {
-    width: 100%;
+    padding-top: 33px;
+    width: 340px;
     text-align: left;
+    margin-left: 0;
+  }
+
+  .example__cost span {
+    padding-top: 0;
+    padding-left: 58px;
   }
 
   .example__result--time {
@@ -164,5 +217,9 @@
   .example__cat {
     width: 690px;
     margin: 0;
+  }
+
+  .example__title {
+    padding-bottom: 146px;
   }
 }

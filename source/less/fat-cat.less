@@ -56,6 +56,16 @@
     border-bottom: 1px dashed #bebebe;
     padding: 0;
     padding-bottom: 4px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &--been {
+      margin-left: 68px;
+    }
+
+    &--become {
+      margin-right: 68px;
+    }
   }
 
   .fat-cat__slider {
@@ -76,29 +86,42 @@
     box-sizing: border-box;
     border: 12px solid #ffffff;
     border-radius: 50%;
-    box-shadow: 0 0 0 1px #cdcdcd;
+    box-shadow: 0 0 0 1px #cdcdcd, 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
   }
 
   .fat-cat__image {
     display: block;
     width: 690px;
+    padding-left: 16px;
+    margin-bottom: 20px;
   }
 
   .fat-cat__image--skinny {
     display: none;
   }
+
+  .fat-cat__wrapper {
+    padding-bottom: 70px;
+  }
 }
 
 @media (min-width: 1300px) {
   .fat-cat {
-    position: relative;
-    align-self: flex-end;
+    position: absolute;
+    width: 690px;
+    left: 625px;
+    top: -8px;
   }
 
   .fat-cat__image {
-    position: absolute;
-    width: 690px;
-    left: 0;
-    top: -550px;
+    margin-bottom: 38px;
+  }
+
+  .fat-cat__btn--been {
+    margin-left: 93px
+  }
+
+  .fat-cat__btn--become {
+    margin-right: 27px
   }
 }

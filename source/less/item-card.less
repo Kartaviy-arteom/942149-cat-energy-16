@@ -51,18 +51,43 @@
   }
 
   .item-card__title {
-    width: 324px;
+    width: 130px;
     font-size: 20px;
+    padding-top: 38px;
+    margin: 0 auto;
+    padding-right: 0;
+    padding-bottom: 25px;
   }
 
   .item-card__list {
     width: 250px;
+    margin: 0 auto;
     font-size: 16px;
+  }
+
+  .item-card__list tr {
+    .border-bottom;
+  }
+
+  .item-card__list td {
+    padding-bottom: 20px;
+  }
+
+  .item-card__list td:nth-child(2n+1) {
+    text-align: left;
+  }
+
+  .item-card__list td:nth-child(2n) {
+    text-align: right;
   }
 
   .item-card__image {
     align-self: center;
     width: 324px;
+
+    &--small {
+      padding-top: 36px;
+    }
 
   }
 
@@ -83,14 +108,6 @@
   .item-card__list {
     width: 170px;
     margin: 0 auto;
-  }
-
-  .item-card__list td:nth-child(2n+1) {
-    text-align: left;
-  }
-
-  .item-card__list td:nth-child(2n) {
-    text-align: right;
   }
 
   .item-card__image {
