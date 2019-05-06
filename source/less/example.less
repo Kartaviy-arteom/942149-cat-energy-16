@@ -117,10 +117,6 @@
     padding-bottom: 53px;
   }
 
-  .example__cat {
-    margin: 0 auto;
-  }
-
   .example__cost {
     margin-left: auto;
     padding-top: 10px;
@@ -175,21 +171,25 @@
 
 @media (min-width: 1300px) {
   .example {
-    position: relative;
     border-top: none;
     background-image: linear-gradient(to bottom, #ffffff 180px, #f2f2f2 180px);
-  }
-
-  .example__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 1300px;
+    padding: 0 40px;
+  }
+
+  .example__wrapper {
+    width: 610px;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .example__paragraph {
     width: 100%;
-    padding-right: 780px;
     padding-bottom: 71px;
   }
 
