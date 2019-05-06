@@ -6,6 +6,10 @@
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
+
+  &::hover, &::focus {
+    opacity: 0.5 /*временное значение*/
+  }
 }
 
 @media (min-width: 768px) {
@@ -34,7 +38,7 @@
     background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, #ffffff 50%, #65a93c 50%);
     background-repeat: no-repeat;
     background-position: 50vw 0, 0 0;
-    margin-bottom: 80px;
+    margin-bottom: 77px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg"), linear-gradient(to right, #ffffff 50%, #65a93c 50%);
@@ -45,6 +49,8 @@
   .header__logo {
     width: 205px;
     margin-right: auto;
+    margin-top: 53px;
+    margin-bottom: 0;
   }
 
   .header__logo-image {
