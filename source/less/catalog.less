@@ -1,5 +1,12 @@
 .catalog__title {
-  .functional-food__title;
+  margin-bottom: 24px;
+  padding-top: 28px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #ffffff;
+  text-align: center;
   padding-top: 16px;
   color: #111111;
   border-bottom: 1px solid @border-color;
@@ -10,14 +17,20 @@
   margin-bottom: 0;
 }
 
-.catalog__title span {
-  display: inline-block;
-  vertical-align: bottom;
-}
-
 .catalog__item {
+  position: relative;
   padding-bottom: 23px;
-  .border-bottom;
+
+  &::after {
+    position: absolute;
+    z-index: 1;
+    width: 320px;
+    height: 1px;
+    background-color: @border-color;
+    content: "";
+    left: -20px;
+    bottom: 0;
+  }
 }
 
 @media (min-width: 768px) {
