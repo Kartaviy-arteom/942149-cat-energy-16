@@ -3,6 +3,39 @@
   .fieldset;
 }
 
+.additional-component__item label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 30px;
+}
+
+.additional-component-input + label:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cecece;
+  left: -10px;
+  top: -7px;
+}
+
+.additional-component-input:checked + label:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  left: -7px;
+  top: 3px;
+}
+
+.additional-component-input:disabled + label {
+  opacity: 0.3;
+}
+
 .additional-component__legend {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
