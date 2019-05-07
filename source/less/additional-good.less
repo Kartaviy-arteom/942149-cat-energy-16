@@ -28,9 +28,6 @@
     line-height: 20px;
     width: 285px;
     padding-left: 38px;
-  }
-
-  .additional-good--top-element .additional-good__title  {
     border: none;
   }
 
@@ -43,11 +40,11 @@
     padding-bottom: 25px;
     border-left: 1px solid #f2f2f2;
     border-right: 1px solid #f2f2f2;
-    border-top: 1px solid #f2f2f2;
-  }
+    border-bottom: 1px solid #f2f2f2;
 
-  .additional-good ~ .additional-good {
-    border-top: none;
+    &--top-element{
+      border-top: 1px solid #f2f2f2;
+    }
   }
 
   .additional-good__wrapper {
@@ -61,5 +58,21 @@
   .additional-good__btn {
     width: 635px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .additional-good__btn {
+    width: 245px;
+    margin: 0;
+  }
+
+  .additional-good__title {
+    padding-left: 0;
+  }
+
+  .additional-good {
+    border-left: none;
+    border-right: none;
   }
 }
