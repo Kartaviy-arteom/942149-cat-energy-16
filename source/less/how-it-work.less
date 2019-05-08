@@ -1,6 +1,6 @@
 .how-it-work__title {
   .h2(36px, 60px);
-  margin-bottom: 40px;
+  margin-bottom: 29px;
   text-transform: none;
 }
 
@@ -13,7 +13,7 @@
 .how-it-work__item {
   position: relative;
   padding-left: 80px;
-  padding-bottom: 30px;
+  padding-bottom: 26px;
   font-size: 14px;
   line-height: 18px;
   color: @paragraph-color;
@@ -32,28 +32,49 @@
   &--composition::before {
     background-image: url("../img/advantage-leaf@1x.png");
     background-position: 5px 5px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+      background-size: 50px auto;
+    }
   }
 
   &--form::before {
     background-image: url("../img/advantage-powder@1x.png");
     background-position: 5px 5px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/advantage-powder@2x.png");
+      background-size: 50px auto;
+    }
   }
 
   &--application::before {
     background-image: url("../img/advantage-dining@1x.png");
     background-position: 5px 5px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/advantage-dining@2x.png");
+      background-size: 50px auto;
+    }
   }
 
   &--time::before {
     background-image: url("../img/advantage-clock@1x.png");
     background-position: 5px 5px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/advantage-clock@2x.png");
+      background-size: 50px auto;
+    }
   }
 }
 
 @media (min-width: 768px) {
   .how-it-work__title {
     .h2(60px, 60px);
-    margin-bottom: 65px;
+    margin-bottom: 72px;
+    padding-top: 16px;
     text-transform: none;
   }
 
@@ -62,15 +83,14 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    .border-bottom();
   }
 
   .how-it-work__item {
     box-sizing: border-box;
     width: 324px;
     padding-left: 0;
-    padding-top: 100px;
-    padding-bottom: 140px;
+    padding-top: 113px;
+    padding-bottom: 132px;
     padding-right: 100px;
     font-size: 16px;
     line-height: 24px;
@@ -85,10 +105,11 @@
       position: absolute;
       height: 230px;
       width: 140px;
-      top: -35px;
-      left: 100px;
-      font-size: 280px;
-      line-height: 280px;
+      top: -38px;
+      left: 115px;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      line-height: 281px;
       color: #f2f2f2;
       z-index: -1;
     }
@@ -108,13 +129,27 @@
     &--time::after {
       content: "4";
     }
+
+    &--application,
+    &--time {
+      padding-bottom: 100px;
+    }
   }
 }
 
 @media (min-width: 1300px) {
+  .how-it-work {
+    margin-bottom: 80px;
+  }
+
+  .how-it-work__title {
+    padding-top: 75px;
+  }
+
   .how-it-work__item {
     width: 245px;
-    padding-right: 45px;
+    padding-right: 0;
+    padding-bottom: 0;
   }
 
   .how-it-work__list {

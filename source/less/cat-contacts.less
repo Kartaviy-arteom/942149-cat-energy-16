@@ -5,8 +5,8 @@
 
 .cat-contacts__legend {
   padding: 0;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 28px;
+  padding-bottom: 29px;
   padding-right: 30px;
   box-sizing: border-box;
   .text-size(24px; 28px);
@@ -19,7 +19,7 @@
 }
 
 .cat-contacts__item {
-  padding-bottom: 15px;
+  padding-bottom: 17px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -27,19 +27,26 @@
 
 .cat-contacts__label {
   .h2 (16px; 18px);
+  padding-top: 13px;
 }
 
 .cat-contacts__input {
   border: 1px solid @input-color;
   box-sizing: border-box;
   .h2 (16px; 18px);
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+  background-size: 17px 13px;
 
   &--mail {
     width: 219px;
+    background-image: url("../img/icon-mail.svg");
   }
 
   &--phone {
     width: 204px;
+    background-image: url("../img/icon-phone.svg");
+    background-size: 20px 20px;
   }
 }
 
@@ -61,7 +68,7 @@
     background-color: #ffffff;
     position: relative;
     z-index: 2;
-    padding-right: 90px;
+    padding-right: 45px;
   }
 
   & span::before {

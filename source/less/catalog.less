@@ -1,20 +1,40 @@
 .catalog__title {
-  .functional-food__title;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  padding-top: 16px;
   color: #111111;
   border-bottom: 1px solid @border-color;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
+  padding-left: 20px;
   .text-size(36px; 60px);
+  text-align: left;
+  margin-bottom: 0;
 }
 
 .catalog__item {
-  padding-bottom: 25px;
-  .border-bottom;
+  position: relative;
+  padding-bottom: 23px;
+
+  &::after {
+    position: absolute;
+    z-index: 1;
+    width: 320px;
+    height: 1px;
+    background-color: @border-color;
+    content: "";
+    left: -20px;
+    bottom: 0;
+  }
 }
 
 @media (min-width: 768px) {
   .catalog__title {
     border: none;
-    padding-bottom: 100px;
+    padding-top: 56px;
+    padding-left: 30px;
+    padding-bottom: 83px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -29,11 +49,23 @@
   .catalog__item {
     width: 324px;
     border: none;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
 @media (min-width: 1300px) {
+  .catalog__title {
+    padding-top: 10px;
+  }
+
   .catalog__item {
     width: 245px;
+  }
+
+  .catalog__wrapper {
+    margin-bottom: 20px;
   }
 }
