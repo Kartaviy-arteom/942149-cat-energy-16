@@ -5,7 +5,7 @@
   height: 30px;
   border: 1px solid #cecece;
   border-radius: 50%;
-  left: -10px;
+  left: -1px;
   top: -7px;
 }
 
@@ -16,10 +16,26 @@
   height: 12px;
   background-color: #67b737;
   border-radius: 50%;
-  left: 0;
+  left: 9px;
   top: 3px;
 }
 
 .radio-form:disabled + label {
   opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+  .radio-form + label::before {
+    width: 40px;
+    height: 40px;
+    left: -57px;
+    top: -11px;
+  }
+
+  .radio-form:checked + label::after {
+    width: 18px;
+    height: 18px;
+    left: -45px;
+    top: 1px;
+  }
 }

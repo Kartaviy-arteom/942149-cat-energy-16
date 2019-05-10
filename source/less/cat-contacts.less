@@ -4,14 +4,26 @@
 }
 
 .cat-contacts__legend {
+  position: relative;
   padding: 0;
-  padding-top: 28px;
-  padding-bottom: 29px;
+  padding-top: 26px;
+  padding-bottom: 36px;
   padding-right: 30px;
   box-sizing: border-box;
-  .text-size(24px; 28px);
+  .text-size(24px; 24px);
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
+
+  &::before {
+    width: 220px;
+    height: 10px;
+    left: -20px;
+    top: 40px;
+    content: "";
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 3;
+  }
 }
 
 .cat-contacts__list {
@@ -35,7 +47,7 @@
   box-sizing: border-box;
   .h2 (16px; 18px);
   background-repeat: no-repeat;
-  background-position: 90% 50%;
+  background-position: 93% 50%;
   background-size: 17px 13px;
 
   &--mail {
@@ -63,15 +75,15 @@
     left: 0;
     top: 50%;
   }
+}
 
-  & span {
-    background-color: #ffffff;
-    position: relative;
-    z-index: 2;
-    padding-right: 45px;
-  }
+.cat-contacts__title span {
+  background-color: transparent;
+  position: relative;
+  z-index: 4;
+  padding-right: 45px;
 
-  & span::before {
+  &::before {
     width: 20px;
     height: 100%;
     left: -20px;
@@ -79,6 +91,12 @@
     content: "";
     background-color: #ffffff;
     position: absolute;
+  }
+}
+
+@media (max-width: 767px) {
+  .cat-contacts__title::after {
+    top: 41%;
   }
 }
 
@@ -93,7 +111,8 @@
   .cat-contacts__input {
     font-size: 20px;
     line-height: 20px;
-    margin-right: 35px;
+    margin-right: 40px;
+    background-position: 96% 50%;
 
     &--mail {
       width: 550px;
@@ -105,13 +124,29 @@
   }
 
   .cat-contacts__title span {
+    background-color: #ffffff;
     padding-right: 20px;
+    padding-left: 28px;
+    padding-right: 43px;
+
+    &::before {
+      left: -10px;
+    }
   }
 
   .cat-contacts__label {
-    padding-top: 10px;
+    padding-top: 17px;
+    padding-left: 36px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .cat-contacts__legend {
+    margin-bottom: 40px;
+  }
+
+  .cat-contacts {
+    margin-bottom: 35px;
   }
 }
 
@@ -152,10 +187,31 @@
     font-size: 20px;
     font-weight: 20px;
     margin-right: 0;
+
+    &--phone {
+      width: 472px;
+    }
   }
 
   .cat-contacts__legend {
     padding-right: 40px;
     box-sizing: content-box;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .cat-contacts__label {
+    padding-left: 0;
+  }
+
+  .cat-contacts__title span {
+    padding-left: 0;
+
+    &::before {
+      left: -40px;
+      width: 40px;
+    }
   }
 }
