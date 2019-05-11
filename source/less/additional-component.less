@@ -144,5 +144,36 @@
 @media (min-width: 1300px) {
   .additional-component__item {
     width: 245px;
+    text-align: left;
+  }
+
+  .additional-component__legend span {
+    padding-left: 0;
+
+    &::before {
+      left: -40px;
+      width: 40px;
+    }
+  }
+
+  .additional-component__item label {
+    padding: 0;
+    padding-left: 31px;
+  }
+
+  .additional-component__item--right-column {
+    margin-right: 0;
+  }
+
+  .additional-component-input + label::before {
+    left: -29px;
+  }
+
+  .additional-component__wrapper {
+    margin-bottom: 8px;
+  }
+
+  .additional-component-input:checked + label::after {
+    left: -20px;
   }
 }

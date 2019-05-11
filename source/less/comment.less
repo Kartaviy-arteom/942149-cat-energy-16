@@ -108,6 +108,8 @@
 
 @media (min-width: 1300px) {
   .comment {
+    margin-bottom: 27px;
+
     &::after {
       right: -110px;
       width: 1110px;
@@ -117,5 +119,19 @@
       left: -110px;
       width: 70px;
     }
+  }
+
+  .comment__legend span {
+    padding-left: 0;
+
+    &::before {
+      left: -40px;
+      width: 40px;
+    }
+  }
+
+  .comment__user-question {
+    margin-left: 0;
+    width: 100%;
   }
 }
