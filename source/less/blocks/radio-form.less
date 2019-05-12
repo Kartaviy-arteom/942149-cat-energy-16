@@ -9,6 +9,11 @@
   top: -7px;
 }
 
+.radio-form:hover + label::before,
+.radio-form:focus + label::before {
+  border-color: #bfbfbf;
+}
+
 .radio-form:checked + label::after {
   content: "";
   position: absolute;
@@ -20,7 +25,7 @@
   top: 3px;
 }
 
-.radio-form:disabled + label {
+.radio-form:active + label {
   opacity: 0.3;
 }
 

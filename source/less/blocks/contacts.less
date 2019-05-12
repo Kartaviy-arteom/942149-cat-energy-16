@@ -1,4 +1,5 @@
 .contacts__wrapper {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -23,6 +24,19 @@
   }
 }
 
+.contacts__pin {
+  position: absolute;
+  left: 129px;
+  top: 253px;
+}
+
+@media (max-width: 767px) {
+  .contacts__pin {
+    width: 62px;
+    height: auto;
+  }
+}
+
 .contacts__welcome {
   width: 160px;
   .h2(16px, 20px);
@@ -39,12 +53,6 @@
   width: 160px;
   padding-right: 20px;
   background-color: #ffffff;
-}
-
-.contacts__pin {
-  position: absolute;
-  top: 140px;
-  left: 135px;
 }
 
 .contacts__map {
@@ -86,6 +94,11 @@
     padding-top: 4px;
     padding-bottom: 55px;
     background-color: #ffffff;
+  }
+
+  .contacts__pin {
+    left: 320px;
+    top: 283px;
   }
 }
 
@@ -132,5 +145,10 @@
     margin-right: auto;
     background-color: #ffffff;
     text-align: left;
+  }
+
+  .contacts__pin {
+    left: 890px;
+    top: 88px;
   }
 }

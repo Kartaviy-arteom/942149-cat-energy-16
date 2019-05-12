@@ -40,9 +40,21 @@
     width: 172px;
   }
 
-  &:hover,
+  &:hover {
+    border-color: #cfcfcf;
+  }
+
   &:focus {
-    outline-color: #444444;
+    border: 2px solid #444444;
+  }
+
+  &::placeholder {
+    color: #444444;
+    opacity: 1;
+  }
+
+  &:focus::placeholder {
+    opacity: 0;
   }
 }
 

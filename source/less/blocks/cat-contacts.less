@@ -60,6 +60,23 @@
     background-image: url("../img/icon-phone.svg");
     background-size: 20px 20px;
   }
+
+  &:hover {
+    border-color: #cfcfcf;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
+
+  &::placeholder {
+    color: #444444;
+    opacity: 1;
+  }
+
+  &:focus::placeholder {
+    opacity: 0;
+  }
 }
 
 .cat-contacts__title {
@@ -143,6 +160,10 @@
 
   .cat-contacts__legend {
     margin-bottom: 40px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .cat-contacts {

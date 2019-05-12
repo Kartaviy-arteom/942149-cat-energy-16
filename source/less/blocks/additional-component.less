@@ -11,7 +11,7 @@
   padding-left: 16px;
 }
 
-.additional-component-input + label::before {
+.additional-component__input + label::before {
   content: "";
   position: absolute;
   width: 30px;
@@ -21,7 +21,12 @@
   top: -6px;
 }
 
-.additional-component-input:checked + label::after {
+.additional-component__input:hover + label::before,
+.additional-component__input:focus + label::before {
+  border-color: #bababa;
+}
+
+.additional-component__input:checked + label::after {
   content: "";
   position: absolute;
   width: 22px;
@@ -33,7 +38,7 @@
   top: 2px;
 }
 
-.additional-component-input:disabled + label {
+.additional-component__input:active + label {
   opacity: 0.3;
 }
 
@@ -125,7 +130,7 @@
     margin-right: 34px;
   }
 
-  .additional-component-input + label::before {
+  .additional-component__input + label::before {
     width: 40px;
     height: 40px;
     left: 9px;
@@ -136,7 +141,7 @@
     left: -5px;
   }
 
-  .additional-component-input:checked + label::after {
+  .additional-component__input:checked + label::after {
     left: 20px;
   }
 }
@@ -165,7 +170,7 @@
     margin-right: 0;
   }
 
-  .additional-component-input + label::before {
+  .additional-component__input + label::before {
     left: -29px;
   }
 
@@ -173,7 +178,7 @@
     margin-bottom: 8px;
   }
 
-  .additional-component-input:checked + label::after {
+  .additional-component__input:checked + label::after {
     left: -20px;
   }
 }

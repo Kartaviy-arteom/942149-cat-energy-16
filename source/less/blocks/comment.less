@@ -25,6 +25,23 @@
   width: 280px;
   resize: none;
   min-height: 150px;
+
+  &:hover {
+    border-color: #cfcfcf;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
+
+  &::placeholder {
+    color: #444444;
+    opacity: 1;
+  }
+
+  &:focus::placeholder {
+    opacity: 0;
+  }
 }
 
 .comment__title {

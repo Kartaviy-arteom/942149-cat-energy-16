@@ -66,6 +66,15 @@
     &--become {
       margin-right: 68px;
     }
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid #989898;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 
   .fat-cat__slider {
@@ -87,6 +96,17 @@
     border: 12px solid #ffffff;
     border-radius: 50%;
     box-shadow: 0 0 0 1px #cdcdcd, 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 0 1px #cdcdcd, 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 11px solid #ffffff;
+      box-shadow: 0 0 0 2px rgb(104, 183, 56), 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
+    }
   }
 
   .fat-cat__image {

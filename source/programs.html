@@ -24,7 +24,7 @@
             <ul class="main-nav__list site-list">
               <li class="site-list__item  site-list__item--inner"><a href="index.html">Главная</a></li>
               <li class="site-list__item site-list__item--inner"><a href="catalog.html">Каталог продукции</a></li>
-              <li class="site-list__item site-list__item--inner site-list__item--active site-list__item--inner--active"><a>Подбор программы</a></li>
+              <li class="site-list__item site-list__item--inner site-list__item--active site-list__item--inner-active"><a>Подбор программы</a></li>
             </ul>
           </div>
         </nav>
@@ -44,15 +44,15 @@
                 <ul class="form-name__list">
                   <li class="form-name__item">
                     <label class="form-name__label" for="cat-name">Имя:<sup>*</sup></label>
-                    <input class="form-name__input form-name__input--cat-name  input-form" type="text" name="cat-name" id="cat-name" required>
+                    <input class="form-name__input form-name__input--cat-name  input-form" type="text" name="cat-name" id="cat-name" required  placeholder="Барсик">
                   </li>
                   <li class="form-name__item">
                     <label class="form-name__label" for="cat-weight">Вес (кг):<sup>*</sup></label>
-                    <input class="form-name__input form-name__input--cat-weight input-form" type="text" name="cat-weight" id="cat-weight" required>
+                    <input class="form-name__input form-name__input--cat-weight input-form" type="text" name="cat-weight" id="cat-weight" required placeholder="7">
                   </li>
                   <li class="form-name__item form-name__item--cat-age">
                     <label class="form-name__label" for="cat-age">Возраст (лет):</label>
-                    <input class="form-name__input form-name__input--cat-age input-form" type="text" name="cat-age" id="cat-age">
+                    <input class="form-name__input form-name__input--cat-age input-form" type="text" name="cat-age" id="cat-age" placeholder="7">
                   </li>
                 </ul>
               </div>
@@ -108,19 +108,19 @@
             <div class="additional-component__wrapper container">
               <ul class="additional-component__list">
                 <li class="additional-component__item">
-                  <input class="additional-component-input visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
+                  <input class="additional-component__input visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
                   <label for="sugar">Сахарозаменитель</label>
                 </li>
                 <li class="additional-component__item additional-component__item--right-column">
-                  <input class="additional-component-input visually-hidden" type="checkbox" name="water" id="water">
+                  <input class="additional-component__input visually-hidden" type="checkbox" name="water" id="water">
                   <label for="water">Питьевая вода</label>
                 </li>
                 <li class="additional-component__item">
-                  <input class="additional-component-input visually-hidden" type="checkbox" name="milk" id="milk">
+                  <input class="additional-component__input visually-hidden" type="checkbox" name="milk" id="milk">
                   <label for="milk">Молоко</label>
                 </li>
                 <li class="additional-component__item additional-component__item--right-column">
-                  <input class="additional-component-input visually-hidden" type="checkbox" name="vitamins" id="vitamins">
+                  <input class="additional-component__input visually-hidden" type="checkbox" name="vitamins" id="vitamins">
                   <label for="vitamins">Витамины</label>
                 </li>
               </ul>
@@ -135,8 +135,9 @@
       <section class="contacts">
         <h2 class="visually-hidden">Контакты магазина</h2>
         <div class="contacts__wrapper container container--big">
-          <p class="contacts__welcome">Приглашаем к&#160сотрудничеству дилеров!</p>
+          <p class="contacts__welcome">Приглашаем к&#160;сотрудничеству дилеров!</p>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+          <img class="contacts__pin" src="img/map-pin.png" alt="Указатель на карте" width="124" height="106">
         </div>
         <!--  <div class="contacts__wrapper--map">
           <img class="contacts__map" src="img/bg-map-mobile@1x.png" alt="Схема проезда" width="320" height="400">
