@@ -1,3 +1,9 @@
+@media (max-width: 767px) {
+  .main-nav--closed .site-list {
+    display: none;
+  }
+}
+
 .main-nav {
   position: relative;
 }
@@ -34,7 +40,7 @@
   box-shadow: 0 6px 0 0 rgba(33, 33, 33, 0.3), 0 12px 0 0 rgba(33, 33, 33, 0.3);
 }
 
-.main-nav--nojs .site-list__item {
+.main-nav--nojs .site-list {
   display: block;
 }
 
@@ -57,12 +63,6 @@
 
   &::after {
     transform: rotate(-45deg);
-  }
-}
-
-@media (max-width: 767px) {
-  .main-nav--closed .site-list {
-    display: none;
   }
 }
 
