@@ -31,10 +31,31 @@
 }
 
 .cat-contacts__item {
+  position: relative;
   padding-bottom: 17px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.cat-contacts__icon {
+  position: absolute;
+  fill: #222222;
+
+
+  &--mail {
+    width: 17px;
+    height: 13px;
+    top: 16px;
+    right: 16px;
+  }
+
+  &--phone {
+    width: 20px;
+    height: 20px;
+    top: 13px;
+    right: 13px;
+  }
 }
 
 .cat-contacts__label {
@@ -46,19 +67,13 @@
   border: 1px solid @input-color;
   box-sizing: border-box;
   .h2 (16px; 18px);
-  background-repeat: no-repeat;
-  background-position: 93% 50%;
-  background-size: 17px 13px;
 
   &--mail {
-    width: 219px;
-    background-image: url("../img/icon-mail.svg");
+    width: 220px;
   }
 
   &--phone {
-    width: 204px;
-    background-image: url("../img/icon-phone.svg");
-    background-size: 20px 20px;
+    width: 205px;
   }
 
   &:hover {
@@ -77,6 +92,14 @@
   &:focus::placeholder {
     opacity: 0;
   }
+}
+
+.cat-contacts__input:hover + .cat-contacts__icon {
+  fill: #444444;
+}
+
+.cat-contacts__input:focus + .cat-contacts__icon {
+  fill: #68b738;
 }
 
 .cat-contacts__title {
@@ -140,6 +163,19 @@
     }
   }
 
+  .cat-contacts__icon {
+
+    &--mail {
+      top: 21px;
+      right: 61px;
+    }
+
+    &--phone {
+      top: 19px;
+      right: 58px;
+    }
+  }
+
   .cat-contacts__title span {
     background-color: #ffffff;
     padding-right: 20px;
@@ -172,6 +208,19 @@
 }
 
 @media (min-width: 1300px) {
+  .cat-contacts__icon {
+
+    &--mail {
+      top: 21px;
+      right: 21px;
+    }
+
+    &--phone {
+      top: 17px;
+      right: 19px;
+    }
+  }
+
   .cat-contacts {
     &::after {
       top: 42px;
@@ -206,7 +255,6 @@
   .cat-contacts__input {
     width: 485px;
     font-size: 20px;
-    font-weight: 20px;
     margin-right: 0;
 
     &--phone {
