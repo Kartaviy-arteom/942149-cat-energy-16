@@ -1,2 +1,2 @@
-source/less/normalize.less
-source/lee/picturefill.min.js
+source/less/global/normalize.less
+source/js/picturefill.min.js
