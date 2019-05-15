@@ -97,4 +97,4 @@ gulp.task("del", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("del", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("images", "del", "copy", "css", "sprite", "html"));
