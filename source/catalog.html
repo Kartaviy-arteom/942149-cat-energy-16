@@ -5,6 +5,8 @@
     <title>Cat Energy catalog</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   </head>
   <body>
     <!--спрайт-->
@@ -326,15 +328,12 @@
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Контакты магазина</h2>
-        <div class="contacts__wrapper container container--big">
+        <div class="contacts__wrapper contacts__wrapper--inner container container--big">
           <p class="contacts__welcome">Приглашаем к&#160;сотрудничеству дилеров!</p>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
           <img class="contacts__pin" src="img/map-pin.png" alt="Указатель на карте" width="124" height="106">
         </div>
-        <!--  <div class="contacts__wrapper--map">
-          <img class="contacts__map" src="img/bg-map-mobile@1x.png" alt="Схема проезда" width="320" height="400">
-          <img class="contacts__pin" src="img/map-pin.png" alt="Схема проезда" width="124" height="106">
-        </div> -->
+        <iframe class="contacts__frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3A440715fdce038695a403d18afd56cfa7c46f513d68e0a40df8e4c785680ed8e7&amp;source=constructor" width="320" height="300"></iframe>
       </section>
     </main>
     <footer class="page-footer">

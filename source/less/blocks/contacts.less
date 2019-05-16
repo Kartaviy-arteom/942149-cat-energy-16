@@ -3,14 +3,25 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 30px;
-  padding-bottom: 365px;
+  padding-bottom: 360px;
+  background-color: #ffffff;
+  background-clip: content-box;
 
   &--map {
     width: 320px;
     margin: 0 auto;
     position: relative;
   }
+}
+
+.contacts__frame {
+  border: none;
+
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  top: 114px;
+  height: 365px;
 }
 
 .contacts {
@@ -37,14 +48,13 @@
     height: auto;
   }
 
-  .contacts__frame {
-    position: absolute;
-    width: 320px;
-    padding: 0;
-    top: 114px;
-    left: 50%;
-    margin-left: -160px;
-    height: 365px;
+  .contacts__wrapper--inner .contacts__address {
+    background-color: #f2f2f2;
+  }
+
+
+  .contacts__wrapper--inner {
+    background-color: #f2f2f2;
   }
 }
 
@@ -52,7 +62,8 @@
   width: 160px;
   .h2(16px, 20px);
   padding-left: 20px;
-  padding-bottom: 24px;
+  padding-bottom: 27px;
+  padding-top: 27px;
 }
 
 .contacts__address {
@@ -63,14 +74,12 @@
   padding: 0;
   width: 160px;
   padding-right: 20px;
+  padding-top: 27px;
+  background-color: #ffffff;
 }
 
 .contacts__map {
   display: block;
-}
-
-.contacts--inner {
-  background-color: #f2f2f2;
 }
 
 @media (min-width: 768px) {
@@ -89,6 +98,7 @@
     padding-left: 40px;
     font-size: 20px;
     line-height: 25px;
+    padding-top: 0;
   }
 
   .contacts__address {
@@ -96,6 +106,7 @@
     font-size: 16px;
     width: 196px;
     padding-right: 42px;
+    padding-top: 0;
   }
 
   .contacts__address span {
@@ -105,14 +116,20 @@
   }
 
   .contacts__wrapper {
-    padding-top: 4px;
-    padding-bottom: 55px;
+    padding-top: 0;
+    padding-bottom: 35px;
     background-color: #ffffff;
+    background-clip: padding-box;
   }
 
   .contacts__pin {
     left: 320px;
     top: 283px;
+  }
+
+  .contacts__frame {
+    top: 196px;
+    height: 401px;
   }
 }
 
@@ -148,6 +165,7 @@
     width: 285px;
     background-color: #ffffff;
     padding-bottom: 60px;
+    z-index: 3;
   }
 
   .contacts__address {
@@ -159,10 +177,17 @@
     margin-right: auto;
     background-color: #ffffff;
     text-align: left;
+    z-index: 3;
   }
 
   .contacts__pin {
     left: 890px;
     top: 88px;
+  }
+
+  .contacts__frame {
+    z-index: 2;
+    top: 0;
+    height: 405px;
   }
 }
