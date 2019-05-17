@@ -144,15 +144,20 @@
   .cat-contacts__legend {
     font-size: 36px;
     line-height: 36px;
-    padding-left: 40px;
+    padding-left: 11px;
     box-sizing: content-box;
     margin-bottom: 40px;
+    box-sizing: border-box;
+
+    &:before {
+      display: none;
+    }
   }
 
   .cat-contacts__input {
     font-size: 20px;
     line-height: 20px;
-    margin-right: 40px;
+    margin-right: 34px;
     background-position: 96% 50%;
 
     &--mail {
@@ -167,12 +172,12 @@
   .cat-contacts__icon {
     &--mail {
       top: 21px;
-      right: 61px;
+      right: 57px;
     }
 
     &--phone {
       top: 19px;
-      right: 58px;
+      right: 54px;
     }
   }
 
@@ -259,6 +264,7 @@
   .cat-contacts__legend {
     padding-right: 40px;
     box-sizing: content-box;
+    padding-left: 32px;
 
     &::before {
       display: none;

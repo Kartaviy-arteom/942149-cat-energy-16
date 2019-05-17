@@ -78,9 +78,10 @@
 
 @media (min-width: 768px) {
   .comment__legend {
+    box-sizing: border-box;
     font-size: 36px;
     line-height: 36px;
-    padding-left: 38px;
+    padding-left: 9px;
     margin-bottom: 50px;
   }
 
@@ -136,6 +137,10 @@
       left: -110px;
       width: 70px;
     }
+  }
+
+  .comment__legend {
+    padding-left: 0;
   }
 
   .comment__legend span {

@@ -72,7 +72,7 @@
     background-color: #67b737;
     content: "";
     left: 0;
-    top: 50%;
+    top: 58%;
   }
 }
 
@@ -95,15 +95,21 @@
 
 @media (min-width: 768px) {
   .additional-component__legend {
+    box-sizing: border-box;
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 66px;
+    padding-left: 38px;
   }
 
   .additional-component__legend span {
-    padding-left: 38px;
     padding-right: 43px;
     margin-bottom: 40px;
+
+    &:before {
+      width: 40px;
+      left: -40px;
+    }
   }
 
   .additional-component__list {
@@ -150,6 +156,10 @@
   .additional-component__item {
     width: 245px;
     text-align: left;
+  }
+
+  .additional-component__legend {
+    padding-left: 0;
   }
 
   .additional-component__legend span {
