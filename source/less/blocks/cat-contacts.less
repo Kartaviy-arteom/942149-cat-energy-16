@@ -92,6 +92,10 @@
   &:focus::placeholder {
     opacity: 0;
   }
+
+  &:focus:invalid {
+    border: 2px solid #ff8282;
+  }
 }
 
 .cat-contacts__input:hover + .cat-contacts__icon {

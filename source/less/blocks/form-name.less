@@ -56,9 +56,17 @@
   &:focus::placeholder {
     opacity: 0;
   }
+
+  &:focus:invalid {
+    border: 2px solid #ff8282;
+  }
 }
 
 @media (min-width: 768px) {
+  .form-name__item {
+    padding-bottom: 20px;
+  }
+
   .form-name__input {
     font-size: 20px;
     line-height: 20px;
@@ -90,6 +98,10 @@
 }
 
 @media (min-width: 1300px) {
+  .form-name {
+    width: 570px;
+  }
+
   .form-name__wrapper {
     margin: 0;
     padding: 0;
