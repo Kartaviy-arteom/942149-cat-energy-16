@@ -47,15 +47,6 @@
     width: 62px;
     height: auto;
   }
-
-  .contacts__wrapper--inner .contacts__address {
-    background-color: #f2f2f2;
-  }
-
-
-  .contacts__wrapper--inner {
-    background-color: #f2f2f2;
-  }
 }
 
 .contacts__welcome {
@@ -84,7 +75,6 @@
 
 @media (min-width: 768px) {
   .contacts {
-    padding-top: 60px;
     padding-bottom: 400px;
     background-image: url("../img/bg-map-tablet@1x.png");
 
@@ -116,7 +106,7 @@
   }
 
   .contacts__wrapper {
-    padding-top: 0;
+    padding-top: 60px;
     padding-bottom: 35px;
     background-color: #ffffff;
     background-clip: padding-box;
@@ -136,7 +126,7 @@
 @media (min-width: 1300px) {
   .contacts {
     background-image: url("../img/bg-map-desktop@1x.png");
-    padding-bottom: 110px;
+    padding-bottom: 107px;
     padding-top: 64px;
     background-size: cover;
 
@@ -189,5 +179,15 @@
     z-index: 2;
     top: 0;
     height: 405px;
+  }
+}
+
+@media (max-width: 1299px) {
+  .contacts__wrapper--inner .contacts__address {
+    background-color: #f2f2f2;
+  }
+
+  .contacts__wrapper--inner {
+    background-color: #f2f2f2;
   }
 }
